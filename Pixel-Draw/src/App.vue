@@ -22,6 +22,11 @@ export default {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 :root {
   --black: #222;

@@ -14,11 +14,10 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-  display: grid;
-  grid-template-columns: 90%;
+  display: block;
   width: 100vw;
+  padding: 0 5%;
   div.logo {
-    margin-left: 5%;
     padding: 20px 0;
     img#logo {
       display: block;

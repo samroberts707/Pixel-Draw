@@ -12,11 +12,10 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  display: grid;
-  grid-template-columns: 90%;
+  display: block;
   width: 100vw;
+  padding: 0 5%;
   p {
-    margin-left: 5%;
     text-align: center;
     padding: 30px 0;
     border-top: 1px solid rgba($color: #FFF, $alpha: 0.5);
