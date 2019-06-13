@@ -1,15 +1,10 @@
 <template>
-  <div class="home">
-    <Pusheen></Pusheen>
-  </div>
+  <div class="home"></div>
 </template>
 
 <script>
-import Pusheen from '@/components/pusheen.vue'
 export default {
-  name: 'Home',
-  components: {
-    Pusheen
-  }
-}
+  name: "Home",
+  components: {}
+};
 </script>
