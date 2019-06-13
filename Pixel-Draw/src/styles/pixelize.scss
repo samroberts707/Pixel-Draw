@@ -1,0 +1,31 @@
+// This function is from the following article -- https://dev.to/jnschrag/creating-pixel-art-with-css-3451
+// Credit to Jacque Schrag - https://jacqueschrag.com/ - https://twitter.com/jnschrag - https://github.com/jnschrag
+// The base function has been taken from the above article and will be adjusted and modified to fit the project requirements.
+@function pixelize($pixelMap, $scale) {
+    // Setup base vars
+    $result: '';
+    $numRows: length($pixelMap);
+    
+    // SCSS loops cannot start at 0
+    @for $rowIndex from 1 through $numRows {
+      // Because we need to start at 1 we need to subtract 1 from each row to get the correct value
+      $y: ($rowIndex - 1);
+      $row: nth($pixelMap, $rowIndex);
+      $numCols: length($row);
+  
+      @for $cellIndex from 1 through $numCols {
+        $x: ($cellIndex - 1);
+        $color: nth($row, $cellIndex);
+        
+        $sep: ',';
+        @if $x == 0 and $y == 0 {
+          $sep: '';
+        }
+        
+        $result: $result + '#{$sep} #{$x * $scale} #{$y * $scale} #{$color}'
+      }
+    }
+    
+    $result: unquote($result);
+    @return $result;
+  }
