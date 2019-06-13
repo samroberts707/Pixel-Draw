@@ -1,6 +1,8 @@
 <template>
   <nav>
-    <h1>Pixel Draw</h1>
+    <div class="logo">
+      <img src="https://via.placeholder.com/75" id="logo" >
+    </div>
   </nav>
 </template>
 
@@ -12,7 +14,15 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-  display: block;
-  background-color: var(--peach);
+  display: grid;
+  grid-template-columns: 90%;
+  width: 100vw;
+  div.logo {
+    margin-left: 5%;
+    padding: 20px 0;
+    img#logo {
+      display: block;
+    }
+  }
 }
 </style>

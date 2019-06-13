@@ -18,14 +18,24 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
 * {
   margin: 0;
   padding: 0;
 }
 :root {
-  --blue: #b0deff;
-  --peach: #ffc5a1;
-  --orange: #ffd19a;
-  --yellow: #fff8a6;
+  --black: #222;
+  --blue: #BAE1FF;
+  --green: #BAFFC9;
+  --yellow: #FFFFBA;
+  --orange: #FFDFBA;
+  --pink: #FFB3BA;
+}
+body {
+  background-color: var(--orange);
+  p, li, a, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black);
+  }
 }
 </style>
