@@ -26,14 +26,26 @@ div.home {
   padding: 5%;
   div.logo {
     h1 {
-      font-size: 3vw;
+      font-size: 4vw;
       text-align: center;
       font-family: 'Press Start 2P', cursive;
+      @media screen and (max-width: 1024px) {
+        font-size: 5vw;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 6vw;
+      }
     }
     h2 {
       font-size: 2vw;
       text-align: center;
       margin-top: 30px;
+      @media screen and (max-width: 1024px) {
+        font-size: 3vw;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 4vw;
+      }
     }
   }
   div.art-grid {
