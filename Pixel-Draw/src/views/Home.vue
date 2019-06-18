@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="logo">
-      <img src="https://via.placeholder.com/1000" id="logo">
+      <h1>Pixel Draw</h1>
       <h2>The pure CSS Pixel Art collection</h2>
     </div>
   </div>
@@ -18,10 +18,10 @@ div.home {
   display: block;
   padding: 5%;
   div.logo {
-    img {
-      display: block;
-      margin: auto;
-      width: 33vw;
+    h1 {
+      font-size: 3vw;
+      text-align: center;
+      font-family: 'Press Start 2P', cursive;
     }
     h2 {
       font-size: 2vw;

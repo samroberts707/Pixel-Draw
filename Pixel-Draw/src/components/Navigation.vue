@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="logo">
-      <img src="https://via.placeholder.com/75" id="logo" >
+      <!-- <img src="https://via.placeholder.com/75" id="logo" > -->
     </div>
   </nav>
 </template>
