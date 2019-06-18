@@ -4,12 +4,19 @@
       <h1>Pixel Draw</h1>
       <h2>The pure CSS Pixel Art collection</h2>
     </div>
+    <div class="art-grid">
+      <Pusheen></Pusheen>
+    </div>
   </div>
 </template>
 
 <script>
+import Pusheen from '../components/art/pusheen.vue';
 export default {
-  name: "Home"
+  name: "Home",
+  components: {
+    Pusheen
+  }
 };
 </script>
 
@@ -28,6 +35,11 @@ div.home {
       text-align: center;
       margin-top: 30px;
     }
+  }
+  div.art-grid {
+    display: grid;
+    grid-template-columns: 25%;
+    padding-top: 50px;
   }
 }
 </style>
