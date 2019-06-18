@@ -38,8 +38,17 @@ div.home {
   }
   div.art-grid {
     display: grid;
-    grid-template-columns: 25%;
+    grid-template-columns: repeat(4, 25%);
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 50px;
     padding-top: 50px;
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(2, 50%);
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 </style>
