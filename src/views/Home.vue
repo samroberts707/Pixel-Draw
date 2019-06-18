@@ -6,16 +6,19 @@
     </div>
     <div class="art-grid">
       <Pusheen></Pusheen>
+      <Mario></Mario>
     </div>
   </div>
 </template>
 
 <script>
 import Pusheen from '../components/art/pusheen.vue';
+import Mario from '../components/art/mario.vue';
 export default {
   name: "Home",
   components: {
-    Pusheen
+    Pusheen,
+    Mario
   }
 };
 </script>
