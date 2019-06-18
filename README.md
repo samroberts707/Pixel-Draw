@@ -1,5 +1,7 @@
 # Pixel-Draw
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dedc1dfc-430d-4a23-b82f-87fea696651a/deploy-status)](https://app.netlify.com/sites/pixel-draw/deploys)
+
 ## Project setup
 ```
 npm install
